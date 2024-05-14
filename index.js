@@ -4,6 +4,8 @@ const resultInput = document.getElementById("result");
 const calculate = document.getElementById("calculate");
 const credits = document.getElementById("credits");
 
+console.log("Leonardo y Maximo estuvieron aquí")
+
 calculate.addEventListener("click",()=>{
     let height = parseFloat(heightInput.value);
     let sunRise = parseFloat(sunRiseInput.value);
