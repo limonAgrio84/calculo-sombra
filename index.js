@@ -4,11 +4,23 @@ const resultInput = document.getElementById("result");
 const calculate = document.getElementById("calculate");
 const credits = document.getElementById("credits");
 
-console.log("Leonardo y Maximo estuvieron aquí")
+console.log("Leonardo, Maximo, Pablo y Julian estuvieron aquí")
 
 calculate.addEventListener("click",()=>{
     let height = parseFloat(heightInput.value);
     let sunRise = parseFloat(sunRiseInput.value);
+    if(!height && !sunRise){
+        window.alert("los dos datos estan mal puestos");
+        return;
+    }
+    else if(!height){
+        window.alert("la altura esta mal puesta");
+        return;
+    }
+    else if(!sunRise){
+        window.alert("el angulo de inclinacion del sol esta mal puesto");
+        return;
+    }
     let angleInRadians = sunRise * (Math.PI / 180);
     let tan = Math.tan(angleInRadians);
     let result = height/tan;

@@ -1,0 +1,47 @@
+*{
+    font-family: Roboto Mono;
+}
+.container{
+    width: 70vw;
+    height: auto;
+    min-height: 25vh;
+    margin: auto;
+    border: 1.5px solid black;
+    color: var(--menu-font-color);
+    padding: 20px;
+    box-shadow: 14px 14px 0px rgba(0, 0, 0, 0.3), /* Sombra lateral */
+    28px 28px 0px rgba(0, 0, 0, 0.2); /* Sombra inferior */
+    transform: translate(0px, -5px); /* Ajuste de posición para crear el efecto 3D */
+    text-align: center;
+    font-family: Roboto Mono;
+    margin-top: 5vh;
+    
+}
+
+input:focus, button:focus {
+    outline: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    background-color: #f9f9f9;
+    color: #222;
+    border: 1px solid black;
+}
+
+button {
+    background-color: #717171;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 2px;
+
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+h1, h2, h3 {
+    color: #233;
+}
